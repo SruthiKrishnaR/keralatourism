@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header .row{
+    background-color: #34626C;
+    color: white;
+    padding-right: 0.5%;
+   
+}
+.header a:link {
+    color: yellowgreen;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.header2 li{
+    float: left;
+}
+.header2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #839B97;
+
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    /* text-align: center; */
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .header2 li a:hover {
+    background-color: #9E7777;
+    color: white;
+  }
+  .s1{
+      background-image: url(https://images.unsplash.com/photo-1463422912519-540bea688379?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80);
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+    }
+  .form1{
+      padding: 5%;
+  }
+  .terms{
+      font-size: 90%;
+  }
+  input[type="text"], textarea {
+
+    background-color: #C6B497; 
+  
+  }
+  input[type="password"], textarea {
+
+    background-color :#C6B497 ; 
+  
+  }
+  input[type="submit"], textarea {
+
+    background-color :goldenrod ; 
+    color: white;
+  
+  }
+  
