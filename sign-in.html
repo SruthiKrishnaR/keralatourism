@@ -7,145 +7,161 @@
     <title>Sign In</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-</head>
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script defer src="signin.js"></script>
+
+  </head>
 <body>
     <header class="header">
         <div class="container col-md-12">
           <div class="row">
-              
+            
               <div class="title text-left kt-logo col-md-6 p-3">
-                  <img src="http://www.keralatourism.gov.in/new-style/images/kerala-logo.jpg" width="186px" height="135px" alt="Kerala Tourism"></a>
+                  <img src="http://www.keralatourism.gov.in/new-style/images/kerala-logo.jpg" width="180px" height="140px" alt="Kerala Tourism" class="p-3"></a>
               </div>
-              <div class="title col-md-6 p-3" style="float:right">
-                  <h3><span style="font-family: 'Montserrat', sans-serif; font-size: 125%;">Welcome To God's Own Country</span></h3>
-                  <p><span style=" float: right; font-size: 130%; font-family: 'Montserrat', sans-serif;"><a href="#">www.keralatourism.gov.in</a></span></p>
+              <div class="title col-md-6 p-3 " style="float: right;">
+                <h3><span style="font-family: 'Montserrat', sans-serif; font-size: 120%;">Welcome To God's Own Country</span></h3>
+                <p><span style=" float: right; font-size: 100%; font-family: 'Montserrat', sans-serif;" class="mr-3"><a href="#">www.keralatourism.gov.in</a></span></p>
               </div>
           </div>
         </div>
       </header>
 
       <header class="header2">
-        <div class="row p-0 ">
+        <div class="row ">
             <div class="col-md-12 my-auto ">
                 <ul>
                     <li><a href="index.html" target="_blank"><span style="color: white;">Home</span></a></li>
                     <li><a href="login.html" target="_blank"><span style="color: white;">Log In</span></a></li>
                     <li><a href="district.html" target="_blank"><span style="color: white;">Districts</span></a></li>
-                    <li><a href="#about" target="_blank"><span style="color: white;">Features</span></a></li>
+                    <li><a href="#" target="_blank"><span style="color: white;">Contact Us</span></a></li>
                 </ul>
             </div>
 
         </div>
       </header>
-    <div class="row">
-        
-      <section class="s1">
-        <div class="col-md-12">
-            <div class="form1">
-                <form action="https://www.keralatourism.org/share-photos/registration/add/" name="frmRegistration" id="frmRegistration" enctype="multipart/form-data" onsubmit="return frmvalidate('11-08-2021')" method="post" accept-charset="utf-8">
-                    <input type="hidden" name="csrf_test_name" value="b3e3335747ecfed48b38cf2e945a9732">
-                        <ul id="form"><br>
-                        <li style="color: white;">Name of Participant <span class="mandatory">*</span>
-                        <input type="text" class="txtInput" name="name" id="name" maxlength="70" value="">
-                        &nbsp;<span class="mandatory fntSmall"></span></li><br><br>
-                        <li style="color: white;">Sex <span class="mandatory">*</span>
-                        <p>
-                            <input type="radio" name="gender" id="gender" value="Male" checked="">
-                            Male
-                            <input type="radio" name="gender" id="gender" value="Female">
-                            Female</p>
-                        </li>
-                        <br><br><br>
-                        <li style="color: white;">Email id of Participant (Your username)<span class="mandatory">*</span>
-                        <input type="text" class="txtInput" name="email" id="email" maxlength="70" value="">
-                        &nbsp;<span class="mandatory fntSmall"></span> </li><br><br>
-                        <li style="color: white;"> Password <span class="mandatory">*</span>
-                        <input type="password" class="txtInput" name="pass" id="pass" size="30" maxlength="120" onkeyup="CheckPasswordStrength(this.value);">
-                        &nbsp; &nbsp; &nbsp; <strong> <span id="PasswordStrength"></span></strong><br>
-                        <span class="fntSmall"> (Minimum 8 characters)</span> &nbsp;<span class="mandatory fntSmall"></span>
-                                <br>
-                        Retype Password <span class="mandatory">*</span>
-                        <input type="password" class="txtInput" name="confpass" id="confpass" size="30" maxlength="120">
-                        &nbsp;<span class="mandatory fntSmall"></span> </li><br><br><br><br>
-                        <li style="color: white;">Mobile No: <span class="mandatory">*</span>
-                        <input type="text" class="txtInput" name="mobile" id="mobile" size="30" maxlength="25" value="">
-                        &nbsp;<span class="mandatory fntSmall"></span> </li><br><br>
-                        <li style="color: white;">Telephone:
-                        <input type="text" class="txtInput" name="telephone" id="telephone" size="30" maxlength="25" value="">
-                        &nbsp;<span class="mandatory fntSmall"></span> </li><br><br>
-                        <li style="color: white;">Declaration <span class="mandatory">*</span><br><br>
+    
+      
+      <section class="s">
+        <div class=" s1 container">
+        <div class="col-md-12 row" id="form1">
+           
+                <form action="index.html"  id="frmRegistration">
+                        <h3 style="color:orange; font-family:cursive" >Sign-In Form</h3><br>
+                        <div id="form-control">
+                            <label style="color:white" class="form-group" >Name of Participant <span class="mandatory">*</span></label>
+                              <input type="text" id="name" maxlength="70" placeholder="kerala123" required style="width: 80%;" value="" onkeyup="validateName()">
+                              <i class="fas fa-check-circle"></i>
+                              <i class="fas fa-exclamation-circle"></i>
+                              
+                              <small>Error message</small>
+                            
+                          </div><br>
+                          <div>
+                            <label style="color: white;">Sex <span class="mandatory">*</span></label>
+                              <p id="radio" style="color: white;">
+                                <input type="radio"  id="gender1" value="Male" required >
+                                Male
+                                <input type="radio"  id="gender2" value="Female" required>
+                                Female
+                              </p>                           
+                          </div>
+                            <br>
+                          <div id="form-control">
+                            <label style="color: white;" class="form-group" >Email Id<span class="mandatory">*</span></label>
+                              <input type="text" id="email" maxlength="120" size="35" required placeholder="kerala_tour@gmail.com" style="width: 80%;" onkeyup=" validateEmail()">
+                              <i class="fas fa-check-circle"></i>
+                              <i class="fas fa-exclamation-circle"></i>
+                              <small>Error message</small>
+                            
+                          </div>
+                          <br>    
+                          <div id="form-control" class="password">                  
+                            <label style="color: white;" class="pass form-group"> Password <span class="mandatory">*</span> </label>
+                              <input type="password" class="password" id="pass" size="47" maxlength="50" style="width: 80%; " onkeyup="validatepwd()"  required >
+                              <p class="pelement" style="color: white; font-size: 70%;">(Password must contain one Uppercase,one Lowercase and atleast one Digit)</p>
+                              <i class="fas fa-check-circle"></i>
+                              <i class="fas fa-exclamation-circle"></i>
+                              <small>Error message</small>
+                              <br>
+                              <div class="indicator">
+                                <span class="weak"></span>
+                                <span class="medium"></span>
+                                <span class="strong"></span>
+                              </div>
+                              <div class="text">text</div> 
+                            
+                          </div>
+                                    
+                          
+                          <div id="form-control"> 
+                            <label style="color: white;" class="confpass form-group">
+                            Retype Password <span class="mandatory">*</span></label>
+                              <input type="password" id="confpass" size="47" maxlength="70" style="width: 80%;" onkeyup="return validateConfpwd()"  required >
+                              <i class="fas fa-check-circle"></i>
+                              <i class="fas fa-exclamation-circle"></i>
+                              <small>Error message</small>
+                            
+                          </div>
+                          <br>
+                          <div id="form-control">
+                            <label style="color: white;" class="mobile form-group">Mobile No: <span class="mandatory">*</span></label>
+                              <input type="text" style="width: 80%;" required id="mobile" size="30" maxlength="25" value="" onkeyup=" return validateMobile()">
+                              <i class="fas fa-check-circle"></i>
+                              <i class="fas fa-exclamation-circle"></i>
+                              <small>Error message</small>
+                          
+                        </div>
                         
-                        <div style="overflow:scroll; height:250px;">
-                            <h2 style="font-size: 130%; color: goldenrod;">Terms</h2>	
-                        <ul class="terms">
-                            <li>1. Photographers interested in submitting photographs are requested to register with www.keralatourism.org.</li>
-                            <li>2. A mobile number is to be provided in order to receive a verification code.</li>
-                            <li>3. All submissions of geotagged photographs are online.</li>
-                            <li>4. The copy right of the photograph being submitted must remain with the person submitting the image.</li>
-                            <li>5. Kerala Tourism reserves the right to reject, without reason, any photograph submitted.</li>
-                            <li>6. Kerala Tourism reserves the right to use submitted pictures for promotional purposes.</li>
-                            <li>7. There is no remuneration for accepted photographs.</li>
-                            <li>8. All complaints or clarification regarding the submission of photographs must be made via email.</li>
-                        </ul><br><br><br><br><br><br>
-                        <h2 style="font-size: 130%; color: goldenrod; float: left;">Conditions</h2>	<br><br>
-                        <ul class="terms">
-                            <li>1. I hereby declare that I am the sole owner and hold the copyright of the submitted photograph.</li>
-                            <li>2. I declare that there is no obscene or objectionable material in this photograph.</li>
-                            <li>3. I state that Kerala Tourism and its employees and agents are indemnified against any third party claim.   </li>
-                        </ul>        </div>
-                        <br>
-                        <input type="checkbox" name="accept" id="accept" value="accept">
-                        I agree all terms and conditions. 
+                         <div id="form-control">  
+                            <label style="color: white; margin-top: 2%;">Declaration <span class="mandatory">*</span></label><br><br>
+                            
+                            <div style="overflow:scroll; height:250px;">
+                                <h2 style="font-size: 130%; color: goldenrod;">Terms</h2>	
+                            <ul class="terms" style="color: white;">
+                                <li>1. Photographers interested in submitting photographs are requested to register with www.keralatourism.org.</li>
+                                <li>2. A mobile number is to be provided in order to receive a verification code.</li>
+                                <li>3. All submissions of geotagged photographs are onlabelne.</li>
+                                <li>4. The copy right of the photograph being submitted must remain with the person submitting the image.</li>
+                                <li>5. Kerala Tourism reserves the right to reject, without reason, any photograph submitted.</li>
+                                <li>6. Kerala Tourism reserves the right to use submitted pictures for promotional purposes.</li>
+                                <li>7. There is no remuneration for accepted photographs.</li>
+                                <li>8. All complaints or clarification regarding the submission of photographs must be made via email.</li>
+                            </ul>
+                            <h2 style="font-size: 130%; color: goldenrod; float: left; margin-top: 4%;" >Conditions</h2>	<br><br><br>
+                          
+                            <ul class="terms" style="color: white;">
+                                <li>1. I hereby declare that I am the sole owner and hold the copyright of the submitted photograph.</li>
+                                <li>2. I declare that there is no obscene or objectionable material in this photograph.</li>
+                                <li>3. I state that Kerala Tourism and its employees and agents are indemnified against any third party claim.   </li>
+                            </ul>        
+                          </div>
+                        </div> 
+                            <br>
+                            <input type="checkbox" name="accept" id="accept" value="accept" required>
+                            <span style="color: white;">I agree all terms and conditions * </span> 
                         
-                        &nbsp;<span class="mandatory fntSmall"></span> </li>
-                        </ul>
-                   
                         
-                            <input type="submit" value="REGISTER" class="btn" style="clear:both">
+                        </div>
                         
-                        </form>
+                        <!-- <input type="submit" value="REGISTER" class="btn" style="clear:both" > -->
+                      <div id="form-control">
+                          <button class="btn m-5" id="btn" style="color: white; background-color: goldenrod; width: 20%;" >REGISTER</button>
+                      </div>
+                  </form>
 
             </div>
 
-
-        </div>
-
+          </div>
+        
+      
       </section>
-      <!-- <section class="s2">
-          <div class="containe">
-        <div class="col-md-6">
-            
-               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                   <div class="carousel-indicators">
-                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                   </div>
-                   <div class="carousel-inner">
-                     <div class="carousel-item active">
-                       <img src="image/f5.jpg" class="d-block w-100" alt="...">
-                     </div>
-                     <div class="carousel-item">
-                       <img src="image/f7.jpg" class="d-block w-100" alt="...">
-                     </div>
-                     <div class="carousel-item">
-                       <img src="image/f3.jpg" class="d-block w-100" alt="...">
-                     </div>
-                   </div>
-                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-                   </button>
-                   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-                   </button>
-                 </div>
-                </div>
+      
+          
+        
+    
 
-        </div>
-        </section> -->
-    </div>
+    
 </body>
 </html>
