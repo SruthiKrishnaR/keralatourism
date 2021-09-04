@@ -2,20 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
 .header h1{
     font-family: 'Lobster', cursive; 
 }
-/* .header .row{
-    background-color: #EEB76B;
-    position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  background-color: transparent;
-  padding: 40px 0;
-  transition: 0.3s;
-} */
+
 .row h3{
     text-align: right;
 }
@@ -24,6 +15,7 @@
 }
 .s1{
     background-color: #F5E8C7;
+    padding-bottom: 15px;
 }
 li{
     float: left;
@@ -55,21 +47,38 @@ ul {
   .header2{
       background-color: #F5E8C7;
   }
-  #form{
-      background-color: #F5E8C7;
+  .form{
+      background-color :#F5E8C7;
       padding-right: 15%;
+      padding-bottom: 20px;
   }
-  #form a:hover{
-      background-color: goldenrod;
-      color: purple;
-  }
-  .form .btn{
+  
+  
+  .form #submit{
       color: white;
   }
-  footer .row{
-      justify-content: center;
-      padding-bottom: 0.5%;
-      background-color: #F5E8C7;
-      margin-top: 2%;
+  #footer{
+      padding-top:3% ;
+      padding-bottom: 0%;
+      background-color:peachpuff;
+      margin-top: 0.1%;
+      display: block;
 
   }
+  .row1{
+    justify-content: center;
+    align-items: center;
+  }
+  .inpad{
+      display: block;
+      justify-content: center;
+      
+  }
+  #footer h6{
+      padding-bottom: 0.001%;
+  }
+  #footer p{
+      padding-top: 1px;
+  }
+  
+  
